@@ -27,7 +27,15 @@ Implicit goals:
 
 1. Create a [GCP project](https://console.cloud.google.com/)
 
-2. Replace `variables.tf` values with your `project_id` and `region`. Your `project_id` must match the project you've initialized gcloud with. To change your `gcloud` settings, run `gcloud init`. The region has been defaulted to `australia-southeast1`; you can find a full list of gcloud regions [here](https://cloud.google.com/compute/docs/regions-zones).
+2. Execute the install script
+
+```bash
+./install.sh
+```
+
+This will create the TF service account and enable the GCP APIs required to run a Kubernetes cluster.
+
+3. Replace `variables.tf` values with your `project_id` and `region`. Your `project_id` must match the project you've initialized gcloud with. To change your `gcloud` settings, run `gcloud init`. The region has been defaulted to `australia-southeast1`; you can find a full list of gcloud regions [here](https://cloud.google.com/compute/docs/regions-zones).
 
 After you've done this, initalize your Terraform workspace, which will download the provider and initialize it with the values provided in the `variables.tf` file.
 
