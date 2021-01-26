@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "kubernetes-terraform-state"
-    prefix = "terraform/state"
+    bucket  = "kubernetes-cluster-302904-terraform-state"
+    prefix  = "terraform/state"
   }
 }
