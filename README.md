@@ -91,6 +91,8 @@ gcloud container clusters get-credentials kubernetes-cluster-gke --region us-cen
 
 The [Kubernetes Cluster Name](variables.tf#L16) and [Region](variables.tf#L6) correspond to the resources spun up by Terraform.
 
-Notes:
+## Tutorial
 
-- Visual Studio Code
+Now that you have access to your kubernetes cluster using the kubectl command line tool, you can begin learning Kubernetes by experimenting with the Guestbook application which can be found here:
+
+https://kubernetes.io/docs/tutorials/stateless-application/guestbook/
